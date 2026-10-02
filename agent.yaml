@@ -1,0 +1,30 @@
+spec_version: "0.1.0"
+name: icu-sepsis-early-warning
+version: 1.0.0
+description: Intensive care vital sign trend analysis, qsofa score trajectory forecasting, and early sepsis alerts.
+author: "Rucha Salpure"
+license: MIT
+model:
+  preferred: claude-opus-4-6
+  fallback:
+    - claude-sonnet-4-5-20250929
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
+skills:
+  - qsofa-deterioration-tracking
+tools: []
+delegation:
+  mode: auto
+runtime:
+  max_turns: 50
+  timeout: 300
+compliance:
+  risk_tier: standard
+  frameworks: []
+tags:
+  - research
+  - autonomous-agent
+  - opengap-verified
+metadata:
+  repository: "https://github.com/Rucha0901/icu-sepsis-early-warning"
